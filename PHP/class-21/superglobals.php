@@ -17,6 +17,11 @@ function multiplication (){
 multiplication();
 echo $multi;
 */
+//echo $_SERVER['PHP_SELF'];
+//echo $_SERVER['HTTP_HOST'];
 
+//echo $_SERVER['SERVER_NAME'];
+
+//echo $_SERVER['SCRIPT_NAME'];
 
 ?>
