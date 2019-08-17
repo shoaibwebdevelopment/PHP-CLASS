@@ -2,6 +2,7 @@
 <?php
 
 include 'connect.php';
+
 $id = '';
 $email = '';
 $password = '';
@@ -10,7 +11,7 @@ $dob = '';
      $sql = "SELECT FROM user id =".$_GET['id'];
      $query = mysqli_query($conn, $sql);
      if($query){
-         if(mysqli_num_rows($query)>0){
+         while ($row = mysqli_num_rows($query)>0){
              $id = $row['id'];
              $email = $row['email'];
              $password = $row['password'];
@@ -40,17 +41,23 @@ $dob = '';
     <div class="form-group">
       <label for="email">Email:</label>
                                 
-      <input type="email" value ="<?= $email ?>" class="form-control" id="email"  name="email">
+      <input type="email" value ="<?= $email; ?>" class="form-control" id="email"  name="email">
     </div>
     <div class="form-group">
       <label for="pwd">Password:</label>
-      <input type="password" value ="<?= $password ?>" class="form-control" id="pwd"  name="password">
+      <input type="password" value ="<?= $password; ?>" class="form-control" id="pwd"  name="password">
     </div>
     <div class="form-group">
       <label for="pwd">Date of Birth:</label>
-      <input type="date" value ="<?= $dob ?>" class="form-control" id="pwd"  name="dob">
+      <input type="date" value ="<?= $dob; ?>" class="form-control" id="pwd"  name="dob">
     </div>
-    <button type="submit" class="btn btn-success">Update Information</button>
+
+    <div class="form-group">
+    
+      <input type="hidden" value ="<?= $dob ?>" class="form-control" id="uid"  name="<?= $id; ?>">
+    </div>
+
+    <button type="update" class="btn btn-success">Update Information</button>
   </form>
 </div>
 

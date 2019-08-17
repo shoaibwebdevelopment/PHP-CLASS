@@ -131,7 +131,7 @@ hr {
       <input type="password" placeholder="Enter Password" name="password" required>
 
       <label for="date"><b>Date of Birth</b></label>
-      <input type="date"  name="date" required>
+      <input type="date"  name="dob" required>
       
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me

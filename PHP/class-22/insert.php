@@ -2,6 +2,7 @@
 <?php
 
 include_once 'connect.php';
+
 if(isset($_POST['signup'])){
  // echo "<script> alert('something')</script>";
  $email = mysqli_escape_string($conn, $_POST['email']);

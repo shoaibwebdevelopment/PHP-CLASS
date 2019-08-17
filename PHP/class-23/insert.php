@@ -6,7 +6,7 @@ if(isset($_POST['signup'])){
  // echo "<script> alert('something')</script>";
  $email = mysqli_escape_string($conn, $_POST['email']);
  $password = mysqli_escape_string($conn, md5($_POST['password']));
- $dob = mysqli_escape_string($conn, $_POST['date']);
+ $dob = mysqli_escape_string($conn, $_POST['dob']);
 
 $sql = "INSERT INTO user (email, password, dob) VALUES('$email','$password','$dob')";
 $query = mysqli_query($conn, $sql);
