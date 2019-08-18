@@ -12,7 +12,8 @@
 
 <div class="container">
   <h2 class ="text-center text-success">Crud Operation</h2>
-  <p class ="text-center text-danger" >User Information</p>            
+  <p class ="text-center text-danger" >User Information</p> 
+  <a href = "insert.php" target="_blank" class = "btn btn-primary">Add Your New Information</a>
   <table class="table">
     <thead>
       <tr>
@@ -35,7 +36,7 @@
         <td><?php echo $row['email']; ?></td>
         <td><?php echo $row['dob']; ?></td>
         <td><a href="edit.php?id=<?=$row['id'];?>" target="_blank" class="btn btn-success">Edit</a>
-        <a href = "#" class = "btn btn-danger">Delete</a> </td>
+        <a href = "delete.php?id=<?=$row['id'];?>" target="_blank" class = "btn btn-danger">Delete</a> </td>
       </tr>
       <?php
 

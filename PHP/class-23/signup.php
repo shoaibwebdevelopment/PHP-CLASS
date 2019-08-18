@@ -113,7 +113,7 @@ hr {
 </style>
 <body>
 
-<h2>Modal Signup Form</h2>
+<h2>Signup Form</h2>
 
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
 
@@ -131,14 +131,9 @@ hr {
       <input type="password" placeholder="Enter Password" name="password" required>
 
       <label for="date"><b>Date of Birth</b></label>
-      <input type="date"  name="dob" required>
+      <input type="date" value="2018-07-22"   name="dob" required>
       
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
-
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
+      
       <div class="clearfix">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
         <button type="submit" class="signupbtn" name ="signup" >Sign Up</button>
